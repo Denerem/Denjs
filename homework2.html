@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Zadanie1:</h2><br>
+    <script>
+        for (var i = 1; i <= 5; i++) {
+            document.write(i);
+        }
+    </script>
+    <h2>Zadanie2:</h2><br>
+    <script>
+        for (var i = 5; i >= 1; i--) {
+            document.write(i);
+        }
+    </script>
+    <h2>Zadanie3:</h2><br>
+    <script>
+        for (var i = 1; i <= 10; i++) {
+            document.write('3*' + i + '=' + 3 * i + "<br>");
+        }
+    </script><br>
+ <h2>Zadanie4:</h2>
+<script>
+    var x = Number(prompt("Введите число: "));
+    var j = 0;
+    if (x <= 0 ) {
+        alert("Введите число большее нуля");
+        } else document.write(x);
+    document.write("<br>");
+    for (var i = 1; i <= x; i++) {
+    document.write(i);
+    if (i <= (x - 1)) document.write( " + " );
+    j = j + i; 
+    if (i == x) document.write( " = " + j);
+    }
+    document.write("<br>" + "Сумма чисел от 1 до "  + x + " равнa " + j);
+    </script>
+</body>
+
+</html>
