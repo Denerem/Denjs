@@ -1,0 +1,27 @@
+
+let el = document.querySelector("body");
+let ul = document.createElement("ul");
+ul.id = "myList";
+for(let i = 1; i < 5; i++) {
+    let li = document.createElement("li");
+    li.innerHTML = "Item № " + i;
+
+    ul.appendChild(li);
+    }
+    document.body.appendChild(ul);
+
+let li1 = document.getElementsByTagName("li");
+li1[0].id = "first";
+
+let li2 = document.getElementsByTagName("li");
+li1[1].className = "class-two";
+
+let li3 = document.getElementsByTagName("li");
+li1[2].style = "color:red";
+
+let li4 = document.getElementsByTagName("li");
+li1[3].style = "display:none";
+
+let liLast = document.createElement('li');
+  liLast.innerHTML = 'Item <strong>№ 5</strong>';
+  ul.append(liLast);
